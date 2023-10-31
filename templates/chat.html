@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <!-- Include the CSS file -->
+    <<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-display">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <div id="user-input">
+            <input type="text" id="user-message" placeholder="Type a message..." />
+            <button id="send-button">Send</button>
+        </div>
+        <div id="ID">
+            <!-- Persona selection dropdown menu -->
+            <select id="persona-select">
+                <option value="developer">Developer</option>
+                <option value="hr">HR</option>
+                <option value="business_coach">Business Coach</option>
+            </select>
+            <!-- EXTRA LLM selection dropdown menu -->
+            <select id="llm-select">
+                <option value="ChatModel">ChatModel</option>
+                <option value="llm">llm</option>
+            </select>
+
+        </div>
+    </div>
+    <!-- Include the JavaScript file at the end of the body -->
+    <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+</body>
+</html>
