@@ -9,6 +9,6 @@
 1. At start-up you'll be presented with :
    1. Persona Selection drop-down box
    2. LLM selection drop-down box (bonus feature)
-      ![Home Chat](images/home.png)
+   ![Home Chat](images/home.png)
 2. Select the persona you want to chat with (you can switch to any in between)
-  ![Chat](images/chat.png)
+![Chat](images/chat.png)
