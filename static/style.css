@@ -1,0 +1,97 @@
+/* General styling for the chat container */
+#chat-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for the chat display area */
+#chat-display {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+/* Styling for chat messages */
+.message {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+
+/* Styling for user messages */
+.user {
+    background-color: #3498db;
+    color: #fff;
+    align-self: flex-end;
+}
+
+/* Styling for chatbot messages */
+.chatbot {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+/* Styling for user input area */
+#user-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+#user-message {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#send-button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for persona selection dropdown */
+#persona-select {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+/* EXTRA */
+/* Styling for LLM selection dropdown */
+#llm-select {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Styling for the dropdown arrow */
+#persona-select::after {
+    content: "\25BC"; /* Down arrow character */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Styling for dropdown options */
+#persona-select option {
+    background-color: #fff;
+    color: #333;
+}
